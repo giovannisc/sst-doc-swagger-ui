@@ -1,0 +1,25 @@
+{
+  "name": "sst-doc-swagger-ui",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "sst dev",
+    "build": "sst build",
+    "deploy": "sst deploy",
+    "remove": "sst remove",
+    "console": "sst console",
+    "typecheck": "tsc --noEmit",
+    "dockerRun": "npx sst bind \"env | grep SST_ > .env.tmp && docker build . -t swaggeruiimage -f ./services/Dockerfile && docker run --env-file .env.tmp -p80:80 swaggeruiimage\""
+  },
+  "devDependencies": {
+    "sst": "^2.36.1",
+    "aws-cdk-lib": "2.101.1",
+    "constructs": "10.2.69",
+    "typescript": "^5.3.2",
+    "@tsconfig/node18": "^18.2.2"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}
