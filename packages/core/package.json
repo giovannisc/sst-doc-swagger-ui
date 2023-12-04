@@ -1,5 +1,5 @@
 {
-  "name": "@swaggerui/core",
+  "name": "@sst-doc-swagger-ui/core",
   "version": "0.0.0",
   "type": "module",
   "scripts": {

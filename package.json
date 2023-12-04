@@ -10,7 +10,7 @@
     "remove": "sst remove",
     "console": "sst console",
     "typecheck": "tsc --noEmit",
-    "dockerRun": "npx sst bind \"env | grep SST_ > .env.tmp && docker build . -t swaggeruiimage -f ./services/Dockerfile && docker run --env-file .env.tmp -p80:80 swaggeruiimage\""
+    "dockerRun": "npx sst bind \"env | grep SST_ > .env.tmp && docker build . -t sst-doc-swagger-ui-image -f ./services/Dockerfile && docker run --env-file .env.tmp -p80:80 sst-doc-swagger-ui-image\""
   },
   "devDependencies": {
     "sst": "^2.36.1",
