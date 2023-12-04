@@ -1,4 +1,4 @@
-# Document Management Application with SST and Docker
+# Documentation with SST and swagger ui
 
 ## Description
 
