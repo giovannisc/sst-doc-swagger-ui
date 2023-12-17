@@ -4,9 +4,9 @@ COPY /documentation/openapi.json /
 
 ENV API_KEY="**None**" \
     SWAGGER_JSON="/openapi.json" \
-    PORT=80 \
+    PORT=3002 \
     PORT_IPV6="" \
-    BASE_URL="/" \
+    BASE_URL="/health" \
     SWAGGER_JSON_URL=""
 
-EXPOSE 80
+EXPOSE 3002
